@@ -1,0 +1,77 @@
+/* Centraliza tudo na tela inteira */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-color: khaki;
+}
+
+/* Container que segura o botão e a lista no meio da tela */
+.container-sanduiche {
+    position: relative;
+    text-align: center;
+}
+
+/* O Botão (Pão de Cima) */
+.botao-pao {
+    background-color: #d2b48c; /* Cor de pão / bege */
+    color: #5c3a21;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 3px solid #8b5a2b;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Lista de ingredientes (Começa escondida!) */
+.ingredientes {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    position: absolute;
+    width: 100%;
+    
+    /* Esconde a lista por padrão */
+    display: none; 
+}
+
+/* Estilo geral de cada ingrediente */
+.ingredientes li {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* CORES DOS INGREDIENTES */
+.alface {
+    background-color: #4caf50; /* Verde */
+}
+
+.queijo {
+    background-color: #ffeb3b; /* Amarelo */
+    color: #333 !important;    /* Texto escuro no amarelo para ler melhor */
+}
+
+.hamburger {
+    background-color: #795548; /* Marrom */
+}
+
+
+/* ────────────────────────────────────────────────────────
+   HOVER:
+   Quando o mouse entra no container, a lista aparece!
+   ──────────────────────────────────────────────────────── */
+.container-sanduiche:hover .ingredientes {
+    display: block;
+}

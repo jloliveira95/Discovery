@@ -1,0 +1,11 @@
+echo test2
+ls
+ls
+cat test1
+ls
+ls
+cd ..
+pwm
+pwd
+clear
+bash

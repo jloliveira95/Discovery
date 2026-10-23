@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.bloco-paralaxe {
+    height: 100vh; /* 100% da altura da janela do navegador*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.foto1 {
+    background-image: url('https://vip-go.premiumbeat.com/wp-content/uploads/2017/06/Parallax.jpg?resize=875,490');
+}
+
+.foto2 {
+    background-image: url('https://conexaoplaneta.com.br/wp-content/uploads/2023/07/comedy-pet-abre-conexao-planeta-scaled.jpg');
+}
+
+.mensagem-centro {
+    
+    color: #ffffff;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 8px;
+
+}
+
+.bloco-preto {
+    background-color: #000000;
+    color: #ffffff; 
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden; 
+}
